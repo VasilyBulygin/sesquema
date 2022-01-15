@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace sesquema.common
+namespace sesquema.common.Definitions
 {
-    public abstract class ItemDef
+    public abstract class DefinitionBase
     {
         //type
         public string type { get; set; }
@@ -21,10 +21,10 @@ namespace sesquema.common
         public LocalizableProperty DisplayType { get; set; }
 
         //bundle
-        public string bundle { get; set; }
+        public string Bundle { get; set; }
 
         //promo
-        public string promo { get; set; }
+        public string Promo { get; set; }
 
         //drop_start_time
         public DateTime? DropStartTime { get; set; }
@@ -68,31 +68,44 @@ namespace sesquema.common
         //tag_generator_values
         public string TagGeneratorValues { get; set; }
 
-        public string store_tags { get; set; }
+        //store_tags
+        public string StoreTags { get; set; }
 
-        public string store_images { get; set; }
+        //store_images
+        public string StoreImages { get; set; }
 
-        public bool hidden { get; set; }
+        //hidden
+        public bool Hidden { get; set; }
 
-        public bool store_hidden { get; set; }
+        //store_hidden
+        public bool StoreHidden { get; set; }
 
-        public bool use_drop_limit { get; set; }
+        //use_drop_limit
+        public bool UseDropLimit { get; set; }
 
-        public uint drop_limit { get; set; }
+        //drop_limit
+        public uint DropLimit { get; set; }
 
-        public uint drop_interval { get; set; }
+        //drop_interval
+        public uint DropInterval { get; set; }
 
-        public bool use_drop_window { get; set; }
+        //use_drop_window
+        public bool UseDropWindow { get; set; }
 
-        public uint drop_window { get; set; }
+        //drop_window
+        public uint DropWindow { get; set; }
 
-        public uint drop_max_per_window { get; set; }
+        //drop_max_per_window
+        public uint DropMaxPerWindow { get; set; }
 
-        public bool granted_manually { get; set; }
+        //granted_manually
+        public bool GrantedManually { get; set; }
 
-        public bool use_bundle_price { get; set; }
+        //use_bundle_price
+        public bool UseBundlePrice { get; set; }
 
-        public bool auto_stack { get; set; }
+        //auto_stack
+        public bool AutoStack { get; set; }
 
         public List<ExtendedProperty> ExtendedProperties { get; set; }
     }
