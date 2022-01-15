@@ -1,8 +1,8 @@
-﻿namespace sesquema.common
+﻿using System.Collections.Generic;
+
+namespace sesquema.common
 {
-    public class LocalizableProperty
+    public class LocalizableProperty : Dictionary<LocalizationSuffix, string>
     {
-        public string Value { get; set; }
-        public LocalizationSuffix Suffix { get; set; }
     }
 }
