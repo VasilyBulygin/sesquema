@@ -1,5 +1,8 @@
 ﻿namespace sesquema.common.Definitions
 {
+    /// <summary>
+    /// This is a special form of generator that can be granted by the ISteamInventory::TriggerItemDrop call from the application.
+    /// </summary>
     public class PlaytimeGeneratorDefinition : DefinitionBase
     {
         //use_drop_limit
