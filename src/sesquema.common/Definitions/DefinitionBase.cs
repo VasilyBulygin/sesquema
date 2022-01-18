@@ -43,10 +43,6 @@ namespace sesquema.common.Definitions
         [JsonProperty("display_type")]
         public LocalizableProperty DisplayType { get; set; }
 
-        //bundle
-        [JsonProperty("bundle")]
-        public string Bundle { get; set; }
-
         //promo
         [JsonProperty("promo")]
         public string Promo { get; set; }
