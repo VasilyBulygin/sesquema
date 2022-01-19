@@ -11,7 +11,7 @@
         public int Id { get; set; }
 
         /// <summary>
-        /// Desired quantity.
+        /// Desired quantity. Zero will be interpreted as one.
         /// </summary>
         public uint Quantity { get; set; }
     }
