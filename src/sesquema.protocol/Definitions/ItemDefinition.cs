@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace sesquema.common.Definitions
+namespace sesquema.protocol.Definitions
 {
     /// <summary>
     /// An item type that can be found in a player inventory.

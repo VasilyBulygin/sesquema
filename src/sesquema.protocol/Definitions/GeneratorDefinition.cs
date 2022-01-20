@@ -1,4 +1,4 @@
-﻿namespace sesquema.common.Definitions
+﻿namespace sesquema.protocol.Definitions
 {
     /// <summary>
     /// Represents a random item.

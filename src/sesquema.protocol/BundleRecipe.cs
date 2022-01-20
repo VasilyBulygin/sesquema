@@ -1,4 +1,4 @@
-﻿namespace sesquema.common
+﻿namespace sesquema.protocol
 {
     /// <summary>
     /// Bundle item recipe

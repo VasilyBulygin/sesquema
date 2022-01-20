@@ -1,4 +1,4 @@
-﻿namespace sesquema.common
+﻿namespace sesquema.protocol
 {
     public enum LocalizationSuffix
     {

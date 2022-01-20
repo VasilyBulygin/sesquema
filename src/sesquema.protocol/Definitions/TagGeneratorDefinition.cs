@@ -1,4 +1,4 @@
-﻿namespace sesquema.common.Definitions
+﻿namespace sesquema.protocol.Definitions
 {
     /// <summary>
     /// Special item definition that applies tags to item instances.

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace sesquema.common.Definitions
+namespace sesquema.protocol.Definitions
 {
     /// <summary>
     /// Represents a collection of ItemDefs, with an associated quantity of each type. When this item is granted, it automatically expands into the set of items configured in the bundle property.

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace sesquema.common.Definitions
+namespace sesquema.protocol.Definitions
 {
     /// <summary>
     /// Base item definition class

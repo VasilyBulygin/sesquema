@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace sesquema.common
+namespace sesquema.protocol
 {
     public class LocalizableProperty : Dictionary<LocalizationSuffix, string>
     {

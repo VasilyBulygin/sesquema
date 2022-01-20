@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace sesquema.common.Definitions
+namespace sesquema.protocol.Definitions
 {
     /// <summary>
     /// This is a special form of generator that can be granted by the ISteamInventory::TriggerItemDrop call from the application.

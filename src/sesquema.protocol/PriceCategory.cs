@@ -1,5 +1,5 @@
 ﻿// ReSharper disable InconsistentNaming
-namespace sesquema.common
+namespace sesquema.protocol
 {
     /// <summary>
     /// Possible values that can be used to specify a price_category for item.

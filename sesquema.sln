@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sesquema", "sesquema\sesquema.csproj", "{4337769E-CE99-4FAA-BB9B-A8ABC2F62491}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sesquema", "src\sesquema\sesquema.csproj", "{4337769E-CE99-4FAA-BB9B-A8ABC2F62491}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sesquema.common", "sesquema.common\sesquema.common.csproj", "{8E27F8D0-8EFF-4EA7-9371-AEB2A0681BA7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sesquema.protocol", "src\sesquema.protocol\sesquema.protocol.csproj", "{8E27F8D0-8EFF-4EA7-9371-AEB2A0681BA7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
