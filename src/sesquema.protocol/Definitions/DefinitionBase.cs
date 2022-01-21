@@ -168,4 +168,16 @@ namespace sesquema.protocol.Definitions
         /// </summary>
         public List<ExtendedProperty> ExtendedProperties { get; set; }
     }
+
+    /// <summary>
+    /// 'item' | 'bundle' | 'generator' | 'playtimegenerator' | 'tag_generator
+    /// </summary>
+    public static class DefinitionTypes
+    {
+        public const string Item = "item";
+        public const string Bundle = "bundle";
+        public const string Generator = "generator";
+        public const string PlaytimeGenerator = "playtimegenerator";
+        public const string TagGenerator = "tag_generator";
+    }
 }
