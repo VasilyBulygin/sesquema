@@ -28,7 +28,6 @@ namespace sesquema.protocol.Definitions
         /// Localizable name of the item. Default language is english.
         /// </summary>
         [JsonProperty("name")]
-        [JsonConverter(typeof(LocalizablePropertyConverter))]
         public LocalizableProperty Name { get; set; }
 
         //description
@@ -36,7 +35,6 @@ namespace sesquema.protocol.Definitions
         /// Localizable description of the item. Default language is english.
         /// </summary>
         [JsonProperty("description")]
-        [JsonConverter(typeof(LocalizablePropertyConverter))]
         public LocalizableProperty Description { get; set; }
 
         //display_type
@@ -44,7 +42,6 @@ namespace sesquema.protocol.Definitions
         /// Localizable description of item's "type". Default language is english.
         /// </summary>
         [JsonProperty("display_type")]
-        [JsonConverter(typeof(LocalizablePropertyConverter))]
         public LocalizableProperty DisplayType { get; set; }
 
         //promo
