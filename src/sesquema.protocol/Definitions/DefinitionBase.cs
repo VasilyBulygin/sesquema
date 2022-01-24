@@ -27,21 +27,18 @@ namespace sesquema.protocol.Definitions
         /// <summary>
         /// Localizable name of the item. Default language is english.
         /// </summary>
-        [JsonProperty("name")]
         public LocalizableProperty Name { get; set; }
 
         //description
         /// <summary>
         /// Localizable description of the item. Default language is english.
         /// </summary>
-        [JsonProperty("description")]
         public LocalizableProperty Description { get; set; }
 
         //display_type
         /// <summary>
         /// Localizable description of item's "type". Default language is english.
         /// </summary>
-        [JsonProperty("display_type")]
         public LocalizableProperty DisplayType { get; set; }
 
         //promo
