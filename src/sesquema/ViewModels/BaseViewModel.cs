@@ -12,4 +12,24 @@ namespace sesquema.ViewModels
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
+
+    public abstract class BaseViewModel<TModel> : BaseViewModel
+    {
+        private TModel _model;
+
+        protected BaseViewModel(TModel model)
+        {
+            _model = model;
+        }
+
+        public TModel Model
+        {
+            get => _model;
+            protected set
+            {
+                _model = value;
+                OnPropertyChanged();
+            }
+        }
+    }
 }
