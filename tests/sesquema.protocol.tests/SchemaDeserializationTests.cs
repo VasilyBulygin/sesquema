@@ -35,6 +35,8 @@ namespace sesquema.protocol.tests
             //Assert
             Assert.NotNull(schema);
             Assert.AreEqual(schema.AppId, 123456);
+            Assert.NotNull(schema.Definitions);
+            Assert.AreEqual(schema.Definitions.Count, 1);
         }
     }
 }
