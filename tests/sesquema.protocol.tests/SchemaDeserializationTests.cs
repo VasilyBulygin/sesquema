@@ -23,7 +23,7 @@ namespace sesquema.protocol.tests
         }
 
         [Test]
-        public void SchemaSerializer_should_deserialize_with_items()
+        public void SchemaSerializer_should_deserialize_with_one_item()
         {
             //Arrange
             const string json = "{\r\n\"appid\": 123456,\r\n\"items\": [\r\n{\n\"itemdefid\": 100,\n\"type\":\"item\",\n\"name\":\"Test\",\n\"name_color\":\"3498db\",\n\"item_slot\":\"slot\",\n\"icon_url\": \"https://picsum.photos/200/200.jpg\",\n\"icon_url_large\":\"https://picsum.photos/500/500.jpg\",\n\"tradable\":false,\n\"marketable\":false,\n\"hidden\":true,\n\"commodity\":true,\n\"tags\":\"type:test_tag\"\n}\r\n]\r\n}";
@@ -37,6 +37,23 @@ namespace sesquema.protocol.tests
             Assert.AreEqual(schema.AppId, 123456);
             Assert.NotNull(schema.Definitions);
             Assert.AreEqual(schema.Definitions.Count, 1);
+        }
+
+        [Test]
+        public void SchemaSerializer_should_deserialize_with_multiple_item()
+        {
+            //Arrange
+            const string json = "{\r\n\"appid\": 123456,\r\n\"items\": [\r\n{\n\"itemdefid\": 100,\n\"type\":\"item\",\n\"name\":\"Test\",\n\"name_color\":\"3498db\",\n\"item_slot\":\"slot\",\n\"icon_url\": \"https://picsum.photos/200/200.jpg\",\n\"icon_url_large\":\"https://picsum.photos/500/500.jpg\",\n\"tradable\":false,\n\"marketable\":false,\n\"hidden\":true,\n\"commodity\":true,\n\"tags\":\"type:test_tag\"\n},{\n\"itemdefid\": 101,\n\"type\":\"item\",\n\"name\":\"Test\",\n\"name_color\":\"3498db\",\n\"item_slot\":\"slot\",\n\"icon_url\": \"https://picsum.photos/200/200.jpg\",\n\"icon_url_large\":\"https://picsum.photos/500/500.jpg\",\n\"tradable\":false,\n\"marketable\":false,\n\"hidden\":true,\n\"commodity\":true,\n\"tags\":\"type:test_tag\"\n}\r\n]\r\n}";
+            using var reader = new StringReader(json);
+
+            //Act
+            var schema = SchemaSerializer.Deserialize(reader);
+
+            //Assert
+            Assert.NotNull(schema);
+            Assert.AreEqual(schema.AppId, 123456);
+            Assert.NotNull(schema.Definitions);
+            Assert.AreEqual(schema.Definitions.Count, 2);
         }
     }
 }
