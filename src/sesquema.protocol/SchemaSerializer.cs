@@ -52,8 +52,10 @@ namespace sesquema.protocol
         public override void WriteJson(JsonWriter writer, object value,
             JsonSerializer serializer)
         {
+            var item = (DefinitionBase) value;
             writer.WriteStartObject();
-
+            writer.WritePropertyName("type");
+            writer.WriteValue(item.Type);
             writer.WriteEndObject();
         }
     }
