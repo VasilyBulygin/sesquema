@@ -56,6 +56,8 @@ namespace sesquema.protocol
             writer.WriteStartObject();
             writer.WritePropertyName("type");
             writer.WriteValue(item.Type);
+            writer.WritePropertyName("id");
+            writer.WriteValue(item.Id);
             writer.WriteEndObject();
         }
     }
