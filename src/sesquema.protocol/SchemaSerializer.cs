@@ -58,6 +58,10 @@ namespace sesquema.protocol
             writer.WriteValue(item.Type);
             writer.WritePropertyName("id");
             writer.WriteValue(item.Id);
+            writer.WritePropertyName("icon_url");
+            writer.WriteValue(item.IconUrl);
+            writer.WritePropertyName("icon_url_large");
+            writer.WriteValue(item.IconUrlLarge);
             writer.WriteEndObject();
         }
     }
