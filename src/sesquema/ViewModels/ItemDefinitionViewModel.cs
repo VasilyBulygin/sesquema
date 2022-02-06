@@ -12,5 +12,17 @@ namespace sesquema.ViewModels
         public ItemDefinitionViewModel(ItemDefinition model) : base(model)
         {
         }
+
+        public int Id => Model.Id;
+
+        public string IconUrl
+        {
+            get => Model.IconUrl;
+            set
+            {
+                Model.IconUrl = value;
+                OnPropertyChanged();
+            }
+        }
     }
 }
