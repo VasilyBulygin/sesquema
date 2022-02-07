@@ -24,5 +24,15 @@ namespace sesquema.ViewModels
                 OnPropertyChanged();
             }
         }
+
+        public string IconUrlLarge
+        {
+            get => Model.IconUrlLarge;
+            set
+            {
+                Model.IconUrlLarge = value;
+                OnPropertyChanged();
+            }
+        }
     }
 }
