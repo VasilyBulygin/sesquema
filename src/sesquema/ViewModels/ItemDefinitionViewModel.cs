@@ -34,5 +34,15 @@ namespace sesquema.ViewModels
                 OnPropertyChanged();
             }
         }
+
+        public bool Hidden
+        {
+            get => Model.Hidden;
+            set
+            {
+                Model.Hidden = value;
+                OnPropertyChanged();
+            }
+        }
     }
 }
