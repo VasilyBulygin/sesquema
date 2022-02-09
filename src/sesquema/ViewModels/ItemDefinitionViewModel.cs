@@ -54,5 +54,15 @@ namespace sesquema.ViewModels
                 OnPropertyChanged();
             }
         }
+
+        public bool GrantedManually
+        {
+            get => Model.GrantedManually;
+            set
+            {
+                Model.GrantedManually = value;
+                OnPropertyChanged();
+            }
+        }
     }
 }
