@@ -59,5 +59,15 @@ namespace sesquema.ViewModels
                 OnPropertyChanged();
             }
         }
+
+        public bool AutoStack
+        {
+            get => Model.AutoStack;
+            set
+            {
+                Model.AutoStack = value;
+                OnPropertyChanged();
+            }
+        }
     }
 }
