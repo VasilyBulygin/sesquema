@@ -69,5 +69,15 @@ namespace sesquema.ViewModels
                 OnPropertyChanged();
             }
         }
+
+        public bool Tradable
+        {
+            get => Model.Tradable;
+            set
+            {
+                Model.Tradable = value;
+                OnPropertyChanged();
+            }
+        }
     }
 }
