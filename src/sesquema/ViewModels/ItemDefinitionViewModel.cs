@@ -79,5 +79,15 @@ namespace sesquema.ViewModels
                 OnPropertyChanged();
             }
         }
+
+        public bool Marketable
+        {
+            get => Model.Marketable;
+            set
+            {
+                Model.Marketable = value;
+                OnPropertyChanged();
+            }
+        }
     }
 }
