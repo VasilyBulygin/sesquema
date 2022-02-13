@@ -1,4 +1,5 @@
-﻿using sesquema.protocol.Definitions;
+﻿using Avalonia.Media;
+using sesquema.protocol.Definitions;
 
 namespace sesquema.ViewModels
 {
@@ -86,6 +87,16 @@ namespace sesquema.ViewModels
             set
             {
                 Model.Marketable = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public Color NameColor
+        {
+            get => Color.Parse(Model.NameColor);
+            set
+            {
+                Model.NameColor = value.ToString();
                 OnPropertyChanged();
             }
         }
