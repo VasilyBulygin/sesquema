@@ -100,5 +100,15 @@ namespace sesquema.ViewModels
                 OnPropertyChanged();
             }
         }
+
+        public Color BackgroundColor
+        {
+            get => Color.Parse(Model.BackgroundColor);
+            set
+            {
+                Model.BackgroundColor = value.ToString();
+                OnPropertyChanged();
+            }
+        }
     }
 }
