@@ -2,9 +2,9 @@
 
 namespace sesquema.ViewModels
 {
-    public class PlaytimeGeneratorItemDefinitionViewModel : ItemDefinitionViewModel
+    public class PlaytimeGeneratorItemDefinitionViewModel : DefinitionBaseViewModel<PlaytimeGeneratorDefinition>
     {
-        public PlaytimeGeneratorItemDefinitionViewModel(ItemDefinition model) : base(model)
+        public PlaytimeGeneratorItemDefinitionViewModel(PlaytimeGeneratorDefinition model) : base(model)
         {
         }
     }
