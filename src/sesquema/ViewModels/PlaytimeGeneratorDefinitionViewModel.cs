@@ -7,5 +7,15 @@ namespace sesquema.ViewModels
         public PlaytimeGeneratorDefinitionViewModel(PlaytimeGeneratorDefinition model) : base(model)
         {
         }
+
+        public bool UseDropLimit
+        {
+            get => Model.UseDropLimit;
+            set
+            {
+                Model.UseDropLimit = value;
+                OnPropertyChanged();
+            }
+        }
     }
 }
