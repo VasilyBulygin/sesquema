@@ -17,5 +17,15 @@ namespace sesquema.ViewModels
                 OnPropertyChanged();
             }
         }
+
+        public bool UseDropWindow
+        {
+            get => Model.UseDropWindow;
+            set
+            {
+                Model.UseDropWindow = value;
+                OnPropertyChanged();
+            }
+        }
     }
 }
