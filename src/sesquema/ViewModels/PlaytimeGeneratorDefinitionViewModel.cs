@@ -27,5 +27,15 @@ namespace sesquema.ViewModels
                 OnPropertyChanged();
             }
         }
+
+        public uint DropInterval
+        {
+            get => Model.DropInterval;
+            set
+            {
+                Model.DropInterval = value;
+                OnPropertyChanged();
+            }
+        }
     }
 }
